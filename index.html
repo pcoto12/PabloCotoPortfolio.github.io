@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Pablo Coto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="Resources/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+
+
+<button id="arrowUpBtn" title="Go to top">&#8593;</button>
+
+<!-- First Row - Header Bar / Menu & logo -->
+
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid p-2">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto d-flex flex-direction-row">
+          <li class="nav-item">
+            <a class="nav-link nav-link-home" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-projects dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="websites.html">Websites</a></li>
+              <li><a class="dropdown-item" href="3dart.html">2D Art</a></li>
+              <li><a class="dropdown-item" href="2dart.html">3D Art</a></li>
+              <li><a class="dropdown-item" href="Publicity.html">Publicity Art</a></li>
+            </ul> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-resume" href="#Resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-contact" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN BANNER -->
+
+<body>
+  <a id="Home"></a>
+  <div class="containerBanner">
+    <div class="row mainBanner ">
+
+      <div class="col-md-6 my-5 text-center">
+        <div class="row ">
+          <h1>Pablo Coto</h1>
+        </div>
+        <div class="row">
+          <img class="LogoBanner my-1 mx-auto" src="Resources/img/PCLogo2.png" alt="PabloCoto Logo in White">
+        </div>
+        <div class="row">
+          <h2>Portfolio 2024</h2>
+        </div>
+        <div class="row">
+          <h5>Art & Code.</h5>
+        </div>
+      </div>
+      <div class="col-md-6 col2Banner d-flex justify-content-center align-items-center">
+        <div class="containerPersonalPic py-3">
+          <img class="personalPicture" src="Resources/img/personalPic.png" alt="Pablo Coto Personal Picture">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ABOUT ME -->
+
+  <div class="containerAboutMe py-2 text-center">
+    <div class="row AboutMe">
+      <div class="row AboutMeDescription px-5 pt-5">
+        <p>Hi, I’m Pablo, a Costa Rican Informatics Engineer student, Web Developer and Graphic Designer. I like merging art and code to create functional, eye-catching products for my clients.</p>
+        <p>When I'm not coding or designing, you'll find me hanging out with my cat Suki, hiking trough the beautiful Costarican landscapes, or diving into a pool!</p>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 my-3">
+          <a href="#Projects"> <button type="button" class="btn btn-dark projectsBtn">View Projects</button>
+          </a>
+        </div>
+        <div class="col-md-3 my-3">
+          <a href="#Contact">          <button type="button" class="btn btn-dark contactBtn">Contact</button>
+          </a>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PROJECTS -->
+
+  <div class="container projectsContainer">
+    <a id="Projects"></a>
+    <div class="container bgcircle-container"><img src="Resources/img/ResumeCircleBg.png" alt=""></div>
+    <div class="row"><h1 class="projectsTitle text-center mt-5">Projects</h1></div>
+
+    <div class="row text-center" >
+      <div class="col-md-6 my-3 d-flex justify-content-center align-items-center">
+        <div class="card">
+          <img src="Resources/img/WebsitesCover.png" class="card-img-top" alt="...">
+          <div class="card-info card-body p-2">
+            <a href="websites.html" class="btn downloadcvbtn btn-dark">Check Websites</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 my-3 d-flex justify-content-center align-items-center">
+        <div class="card">
+          <img src="Resources/img/3DCover.png" class="card-img-top" alt="...">
+          <div class="card-info card-body p-2">
+            <a href="3dart.html" class="btn downloadcvbtn btn-dark">Check 3D Art</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row text-center">
+      <div class="col-md-6 my-3 d-flex justify-content-center align-items-center">
+        <div class="card">
+          <img src="Resources/img/2dartCover.png" class="card-img-top" alt="...">
+          <div class="card-info card-body p-2">
+            <a href="2dart.html" class="btn downloadcvbtn btn-dark">Check 2D Art</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-6 my-3 d-flex justify-content-center align-items-center">
+        <div class="card">
+          <img src="Resources/img/PublicityCover.png" class="card-img-top" alt="...">
+          <div class="card-info card-body p-2">
+            <a href="Publicity.html" class="btn downloadcvbtn btn-dark">Check Publicity Art</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- RESUME -->
+  <section class="container-fluid ResumeContainer text-center py-5 my-5">
+    <a id="Resume"></a>
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-3">
+        <h1 class=" title resumeTitle">Resume</h1>
+        <p class=""><button type="button" class="btn btn-dark" id="downloadBtn">Download CV</button></p>
+      </div>
+
+      <div class="col-md-9">
+        <div class="row m-3 text">
+          <div class="col-md-3">
+            <h5><li class="EducationTitle">Education</li></h5>
+            <p class="ps-4">Ulacit - Informatics Engineer Bachelor</p>
+            <p class="ps-4">TEC - Graphic Design Technical Degree</p>
+            <p class="ps-4">CTPVC - Banking & Finances Technical Degree</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5> <li class="softwareTitle">Software</li></h5>
+            <p class="ps-4">Illustrator</p>
+            <p class="ps-4">Photoshop</p>
+            <p class="ps-4">After Effects</p>
+            <p class="ps-4">Blender</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5><li class="servicesTitle">Services</li></h5>
+            <p class="ps-4">Websites - UX/UI - Logos</p>
+            <p class="ps-4">Social Media Posts - Brand Design</p>
+            <p class="ps-4">Digital 3D Art - Motion Graphics</p>
+          </div>
+
+          <div class="col-md-3">
+            <h5><li class="">Coding</li></h5>
+            <p class="ps-4">HTML + CSS </p>
+            <p class="ps-4">Java </p>
+            <p class="ps-4">Javascript</p>
+            <p class="ps-4">Python</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT ME -->
+
+
+  <section class="container contactMeContainer ">
+    <a id="Contact"></a>
+
+    <div class="row py-5">
+
+      <div class="col-sm-12 col-md-6 px-4 my-2">
+        <div class="container containerForm">
+          <form>
+            <div class="mb-3">
+              <label for="InputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="InputMessage" class="form-label">Your Message</label>
+              <input type="Message" class="form-control" id="InputMessage">
+            </div>
+            <button type="submit" class="btn btn-dark downloadcvbtn">Send</button>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 text-center">
+        <div class="row m-2">
+
+          <h1 class="title contactMeTitle mb-4">Contact Me</h1></div>
+
+        <div class="row m-3 socialMedia px-5 d-flex justify-content-evenly">
+          <div class="col">
+            <a href="https://www.facebook.com" class="fb-icon socialMediaIcon" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com" class="ig-icon socialMediaIcon" target="_blank">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://wa.me" class="wa-icon socialMediaIcon" target="_blank">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.linkedin.com" class="li-icon socialMediaIcon" target="_blank"> 
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+       </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- THANK YOU FOR VISITING -->
+
+  <div class="containerThankyou text-center">
+    <div class="row pb-5">
+      <h3 class="ThankYouMessage pb-5">Thank you for visiting!</h3>
+    </div>
+  </div>
+  <div class="divisor"></div>
+
+
+
+  <!-- FOOTER  -->
+
+
+
+  <footer class="container-fluid FooterContainer text-center p-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <a class="privacyPolicyLinkA" href="privacypolicy.html" target="_blank">
+          <p class="privacyPolicyLink">Privacy Policy</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="row "><img class="LogoBanner2 my-1 mx-auto" src="Resources/img/PCLogo2.png" alt=""></div>
+        <div class="row">
+          <p class="p-0 m-0">© Pablo Coto</p>
+        </div>
+        <div class="row ">
+          <p class="p-0 m-0">2024</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row justify-content-center">
+          <p>Heredia, Costa Rica.</p>
+          <img class="flagIcon" src="Resources/img/CRFlag.png" alt="Costa Rica Flag Icon">  
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="Resources/js/arrowUp.js"></script>
+  <script src="Resources/js/downloadCv.js"></script>
+
+</body>
+
+</html>
