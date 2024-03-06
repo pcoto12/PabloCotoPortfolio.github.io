@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Pablo Coto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="Resources/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<button id="arrowUpBtn" title="Go to top">&#8593;</button>
+
+<!-- First Row - Header Bar / Menu & logo -->
+
+<header>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid p-2">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav m-auto d-flex flex-direction-row">
+          <li class="nav-item">
+            <a class="nav-link nav-link-home" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-projects dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="websites.html">Websites</a></li>
+              <li><a class="dropdown-item" href="3dart.html">3D Art</a></li>
+              <li><a class="dropdown-item" href="Publicity.html">2D Art</a></li>
+            </ul> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-resume" href="index.html#Resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-contact" href="index.html#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="divisor"></div>
+
+<body>
+  <div class="container">
+    <div class="row text-center m-5">
+      <a id="websites"></a>
+      <h1>2D Art</h1>
+    </div>
+
+    <div class="websiteCardsContainer">
+      <div class="container bgcircle-container-Portfolio"><img src="Resources/img/ResumeCircleBg.png" alt=""></div>
+      <div class="row text-center">
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+          <div class="card">
+            <img class="ProjectMockupCover" src="Resources/img/Icons/SpaceIcons.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Icons</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">View
+                Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+          <div class="card">
+            <img class="ProjectMockupCover" src="Resources/img/Publicity/SocialMediaCover.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Social Media</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">View
+                Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+          <div class="card">
+            <img class="ProjectMockupCover" src="Resources/img/UmbrellaAcademy/DesignPrinciplesCover.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Design Principles</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">View
+                Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center p-5">
+          <div class="card">
+            <img class="ProjectMockupCover" src="Resources/img/Various2D/variousCover.png" alt="">
+
+            <div class="card-body">
+              <h5 class="card-title">Various 2D</h5>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">View
+                Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+
+
+  <!-- Modal for Project 1 -->
+  <div class="modal fade modal-dark text-center" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal1Label">Icons</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div id="carousel1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Resources/img/Icons/SpaceIcons.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <p>The space Icon pack - 2022</p>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- Modal for Project 2 -->
+
+  <div class="modal fade modal-dark" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModal2Label">Social Media Publicity Posts</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <div id="carouselExampleCaptions2" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Resources/img/Publicity/Antumbra Movie Poster.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Antumbra Movie Poster - 2022.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/Publicity/KFC-Infogram.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>KFC Infogram - 2022.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/Publicity/MovieArtCover.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Mr. Indifferent Movie Cover - 2022.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/Publicity/Pablo Coto - Tarea 1 - Autos.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>1000 Miles for Here Movie Poster - 2022.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/Publicity/Feed.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p>Les Drinks Instagram Feed - 2022.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal for Project 3 -->
+
+
+  <div class="modal fade modal-dark" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="projectModal3Label">Social Media Publicity Posts</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <div id="carouselExampleCaptions3" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Resources/img/UmbrellaAcademy/UA1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+        
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/UmbrellaAcademy/UA2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/UmbrellaAcademy/UA3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/UmbrellaAcademy/UA4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/img/UmbrellaAcademy/UA5.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal for Project 4 -->
+
+
+    <div class="modal fade modal-dark" id="projectModal4" tabindex="-1" role="dialog" aria-labelledby="projectModal4Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal4Label">Various 2D Designs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+  
+            <div id="carouselExampleCaptions4" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              </div>
+  
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Resources/img/Various2D/PanoramicGirlArt1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Panoramic Girl Music Cover - 2022</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="Resources/img/Various2D/PanoramicGirlArt2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Panoramic Girl Music Cover - 2022</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="Resources/img/Various2D/PabloCotoProyecto-2V2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Cow and Alien - 2021</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="Resources/img/Various2D/SelfPortrait.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Self Portrait - 2022</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="Resources/img/Various2D/EdificioIlustradoTematica.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <p>Illustrated Building Arabic Style - 2022</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+    
+
+  <div class="divisor"></div>
+
+
+
+  <!-- FOOTER  -->
+
+  <footer class="container-fluid FooterContainer text-center p-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4">
+        <a class="privacyPolicyLinkA" href="privacypolicy.html" target="_blank">
+          <p class="privacyPolicyLink">Privacy Policy</p>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="row "><img class="LogoBanner2 my-1 mx-auto" src="Resources/img/PCLogo2.png" alt=""></div>
+        <div class="row">
+          <p class="p-0 m-0">© Pablo Coto</p>
+        </div>
+        <div class="row ">
+          <p class="p-0 m-0">2024</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row justify-content-center">
+          <p>Heredia, Costa Rica.</p>
+          <img class="flagIcon" src="Resources/img/CRFlag.png" alt="Costa Rica Flag Icon">  
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+
+
+
+</html>
